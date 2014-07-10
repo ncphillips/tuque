@@ -8,6 +8,7 @@
 define("XMLNS", "http://www.w3.org/2000/xmlns/");
 define('FEDORA_RELS_EXT_URI', 'info:fedora/fedora-system:def/relations-external#');
 define("FEDORA_MODEL_URI", 'info:fedora/fedora-system:def/model#');
+define("ISLANDORA_MODEL_URI", 'http://islandora.ca/ontology/model#');
 define("ISLANDORA_RELS_EXT_URI", 'http://islandora.ca/ontology/relsext#');
 define("ISLANDORA_RELS_INT_URI", "http://islandora.ca/ontology/relsint#");
 
@@ -574,6 +575,7 @@ class FedoraRelsExt extends FedoraRelationships {
       'fedora' => FEDORA_RELS_EXT_URI,
       'fedora-model' => FEDORA_MODEL_URI,
       'islandora' => ISLANDORA_RELS_EXT_URI,
+      'islandora-model' => ISLANDORA_MODEL_URI,
     );
 
     parent::__construct($namespaces);
